@@ -59,3 +59,12 @@ public class Complex {
         System.out.println(c.multiply(f));
     }
 }
+
+/* OUTPUT
+2.23606797749979
+3.0
+4.0 + 2.0i
+4.0 + 2.0i
+3.0 + 6.0i
+3.0 + 6.0i
+ */

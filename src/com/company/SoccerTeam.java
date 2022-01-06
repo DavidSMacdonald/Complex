@@ -77,6 +77,40 @@ public class SoccerTeam {
         4 Games Played in Total
         14 Goals scored in total
          */
+        System.out.println("WEEK 1");
+        System.out.println("Andover " + Andover.points());
+        System.out.println("Billerica " + Billerica.points());
+        System.out.println("Haverhill " + Haverhill.points());
+        System.out.println("Dracut " + Dracut.points());
+        System.out.println("Games played: " + getTotalGamesPlayed());
+        System.out.println("Goals scored: " + getTotalGoalsScored());
+
+        Andover.reset();
+        Billerica.reset();
+        Haverhill.reset();
+        Dracut.reset();
+        startTournament();
+
+        // Andover, Dracut tie
+        Andover.played(Dracut,3,3);
+        // Haverhill wins, Billerica loses
+        Haverhill.played(Billerica,4,2);
+        // Billerica, Andover tie
+        Billerica.played(Andover,1,1);
+        // Dracut wins, Haverhill loses
+        Dracut.played(Haverhill,2,0);
+        /*
+        STANDINGS
+        Town        W/L/D - # pts
+        Andover     0/0/2 - 2 pts
+        Billerica   0/1/1 - 1 pts
+        Haverhill   1/1/0 - 3 pts
+        Dracut      1/0/1 - 4 pt
+
+        4 Games Played in Total
+        16 Goals scored in total
+         */
+        System.out.println("\nWEEK 2");
         System.out.println("Andover " + Andover.points());
         System.out.println("Billerica " + Billerica.points());
         System.out.println("Haverhill " + Haverhill.points());
@@ -85,3 +119,21 @@ public class SoccerTeam {
         System.out.println("Goals scored: " + getTotalGoalsScored());
     }
 }
+
+/*
+WEEK 1
+Andover 3
+Billerica 4
+Haverhill 3
+Dracut 1
+Games played: 4
+Goals scored: 14
+
+WEEK 2
+Andover 2
+Billerica 1
+Haverhill 3
+Dracut 4
+Games played: 4
+Goals scored: 16
+ */
